@@ -1,14 +1,14 @@
 [
   {
-    "modid": "MTUtils",
-    "name": "MTUtils",
+    "modid": "MTUtilsUnofficial",
+    "name": "MTUtils Unofficial",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "url": "",
     "updateUrl": "https://minecraft.curseforge.com/projects/mtutils",
     "authorList": [
       "LionZXY",
-      "zetti68"
+      "zetti68","monatann"
     ],
     "logoFile": "",
     "screenshots": [],
