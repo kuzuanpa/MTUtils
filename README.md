@@ -1,5 +1,8 @@
 # MTUtils Unofficial
 Just add codes for my modpack.
+Original MTUtils can be found here
+https://www.curseforge.com/minecraft/mc-mods/mtutils
+https://github.com/LionZXY/MTUtils
 
 # LICENSE
 I copied from CurseForge LICENSE
