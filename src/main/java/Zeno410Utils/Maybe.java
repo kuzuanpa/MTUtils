@@ -2,14 +2,23 @@
 package Zeno410Utils;
 // code by Nat Price
 
-import com.google.common.base.Function;
-import com.google.common.base.Predicate;
-
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Iterator;
+
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
+import com.google.common.base.Function;
+import com.google.common.base.Predicate;
 
 public abstract class Maybe<T> implements Iterable<T> {
     public abstract boolean isKnown();

@@ -1,11 +1,20 @@
 
 package Zeno410Utils;
 
-import net.minecraft.world.WorldServer;
-import net.minecraftforge.common.config.Configuration;
-
 import java.io.File;
 import java.util.logging.Logger;
+
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
+import net.minecraft.world.WorldServer;
+import net.minecraftforge.common.config.Configuration;
 
 public class ConfigManager<Type extends Settings> {
     static Logger logger = new Zeno410Logger("ConfigManager").logger();
@@ -103,7 +112,7 @@ public class ConfigManager<Type extends Settings> {
         return tested != null;
     }
 
-    
+
     private void setWorldConfigFile(File newFile) {
         if ((worldConfigFile== null)||(!newFile.getAbsolutePath().equals(worldConfigFile.getAbsolutePath()))) {
             worldConfigFile = newFile;

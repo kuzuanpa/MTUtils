@@ -1,4 +1,14 @@
 package exterminatorJeff.undergroundBiomes.api;
+
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
@@ -28,7 +38,7 @@ public class UBIDs {
     public final static NamedSlabPair igneousCobblestoneSlabName = new NamedSlabPair(igneousCobblestoneName);
     public final static NamedSlabPair metamorphicCobblestoneSlabName = new NamedSlabPair(metamorphicCobblestoneName);
     public final static NamedSlabPair sedimentaryStoneSlabName = new NamedSlabPair(sedimentaryStoneName);
-    
+
     public final static NamedBlock UBButtonName = new NamedBlock("button");
     public final static NamedBlock UBStairsName = new NamedBlock("stairs");
     public final static NamedBlock UBWallsName = new NamedBlock("wall");

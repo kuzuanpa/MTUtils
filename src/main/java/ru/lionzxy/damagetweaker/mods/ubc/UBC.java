@@ -1,11 +1,26 @@
 package ru.lionzxy.damagetweaker.mods.ubc;
 
-import Zeno410Utils.MinecraftName;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.lang.reflect.Method;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
+
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
+import Zeno410Utils.MinecraftName;
 import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -14,11 +29,6 @@ import exterminatorJeff.undergroundBiomes.api.UBAPIHook;
 import exterminatorJeff.undergroundBiomes.api.UBOreTexturizer;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.lang.reflect.Method;
 
 /**
  * Created by nikit_000 on 06.10.2015.

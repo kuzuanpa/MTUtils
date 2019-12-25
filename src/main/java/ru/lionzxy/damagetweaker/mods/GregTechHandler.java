@@ -1,5 +1,14 @@
 package ru.lionzxy.damagetweaker.mods;
 
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -133,7 +142,7 @@ public class GregTechHandler {
 	}
 
 	@ZenMethod
-	public static void addCustomRecipe(final String fieldName, boolean aOptimize, long aEUt, long aDuration,
+	public static void addCustomRecipe(final String fieldName, boolean aOptimize, long aEUt, long aDuration, long aSpecialValue,
 			long[] aChances, IItemStack[] aInputs, ILiquidStack[] aFluidInputs, ILiquidStack[] aFluidOutputs,
 			IItemStack... aOutputs) {
 		try {
@@ -146,7 +155,7 @@ public class GregTechHandler {
 			FluidStack[] fluidOutputs = MTUtilsMod.toFluids(aFluidOutputs);
 
 			final Recipe recipe = new Recipe(aOptimize, true, true, inputs, outputs, CS.NI, aChances, fluidInputs,
-					fluidOutputs, aDuration, aEUt, 0L);
+					fluidOutputs, aDuration, aEUt, aSpecialValue);
 
 			Runnable applyRunnable = new Runnable() {
 				@Override
@@ -174,16 +183,16 @@ public class GregTechHandler {
 	}
 
 	@ZenMethod
-	public static void addCustomRecipe(String fieldName, boolean aOptimize, long aEUt, long aDuration, long[] aChances,
+	public static void addCustomRecipe(String fieldName, boolean aOptimize, long aEUt, long aDuration, long aSpecialValue, long[] aChances,
 			IItemStack[] aInputs, ILiquidStack aFluidInput, ILiquidStack aFluidOutput, IItemStack... aOutputs) {
-		addCustomRecipe(fieldName, aOptimize, aEUt, aDuration, aChances, aInputs, new ILiquidStack[] { aFluidInput },
+		addCustomRecipe(fieldName, aOptimize, aEUt, aDuration, aSpecialValue, aChances, aInputs, new ILiquidStack[] { aFluidInput },
 				new ILiquidStack[] { aFluidOutput }, aOutputs);
 	}
 
 	@ZenMethod
-	public static void addCustomRecipe(String fieldName, boolean aOptimize, long aEUt, long aDuration, long[] aChances,
+	public static void addCustomRecipe(String fieldName, boolean aOptimize, long aEUt, long aDuration, long aSpecialValue, long[] aChances,
 			IItemStack[] aInputs, IItemStack... aOutputs) {
-		addCustomRecipe(fieldName, aOptimize, aEUt, aDuration, aChances, aInputs, new ILiquidStack[] {},
+		addCustomRecipe(fieldName, aOptimize, aEUt, aDuration, aSpecialValue, aChances, aInputs, new ILiquidStack[] {},
 				new ILiquidStack[] {}, aOutputs);
 	}
 

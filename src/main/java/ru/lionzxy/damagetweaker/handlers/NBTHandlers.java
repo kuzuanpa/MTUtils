@@ -1,16 +1,32 @@
 package ru.lionzxy.damagetweaker.handlers;
 
-import minetweaker.api.data.IData;
-import minetweaker.api.formatting.IFormattedText;
-import minetweaker.mc1710.data.NBTConverter;
-import net.minecraft.nbt.*;
-import net.minecraft.server.MinecraftServer;
-import stanhebben.zenscript.annotations.ZenClass;
-import stanhebben.zenscript.annotations.ZenMethod;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
+import minetweaker.api.data.IData;
+import minetweaker.mc1710.data.NBTConverter;
+import net.minecraft.nbt.NBTTagByte;
+import net.minecraft.nbt.NBTTagByteArray;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagDouble;
+import net.minecraft.nbt.NBTTagFloat;
+import net.minecraft.nbt.NBTTagInt;
+import net.minecraft.nbt.NBTTagIntArray;
+import net.minecraft.nbt.NBTTagLong;
+import net.minecraft.nbt.NBTTagShort;
+import net.minecraft.nbt.NBTTagString;
+import stanhebben.zenscript.annotations.ZenClass;
+import stanhebben.zenscript.annotations.ZenMethod;
 
 /**
  * Created by lionzxy on 6/9/16.

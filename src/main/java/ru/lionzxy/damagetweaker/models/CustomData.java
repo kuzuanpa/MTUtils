@@ -1,14 +1,30 @@
 package ru.lionzxy.damagetweaker.models;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.StringWriter;
+import java.nio.charset.Charset;
+
+import org.apache.commons.io.IOUtils;
+
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
 import cpw.mods.fml.common.FMLLog;
 import minetweaker.api.data.IData;
 import minetweaker.mc1710.data.NBTConverter;
 import net.minecraft.nbt.JsonToNBT;
 import net.minecraft.nbt.NBTTagCompound;
-import org.apache.commons.io.IOUtils;
-
-import java.io.*;
-import java.nio.charset.Charset;
 
 /**
  * Created by lionzxy on 6/8/16.

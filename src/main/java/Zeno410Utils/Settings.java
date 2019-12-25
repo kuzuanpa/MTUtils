@@ -1,14 +1,23 @@
 
 package Zeno410Utils;
 
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.common.config.Property;
-
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.config.Property;
 
 
 /**
@@ -204,7 +213,7 @@ abstract public class Settings implements Streamable {
             output.writeDouble(defaultValue);
         }
     }
-    
+
     abstract protected class Setting<Type> implements Mutable<Type>, Streamable {
         protected boolean set = false;
         protected Type value;

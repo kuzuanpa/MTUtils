@@ -1,5 +1,14 @@
 package ru.lionzxy.damagetweaker;
 
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
 import java.io.File;
 
 import com.google.common.io.Files;
@@ -14,11 +23,8 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 import exterminatorJeff.undergroundBiomes.api.NamedBlock;
 import gregapi.data.CS;
 import minetweaker.MineTweakerAPI;
-import minetweaker.MineTweakerImplementationAPI;
 import minetweaker.api.item.IItemStack;
 import minetweaker.api.liquid.ILiquidStack;
-import minetweaker.runtime.providers.ScriptProviderDirectory;
-import minetweaker.util.IEventHandler;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
@@ -29,7 +35,6 @@ import ru.lionzxy.damagetweaker.handlers.HandlerHelper;
 import ru.lionzxy.damagetweaker.handlers.TicksHandler;
 import ru.lionzxy.damagetweaker.models.CustomGlobalData;
 import ru.lionzxy.damagetweaker.mods.GTListCommand;
-import ru.lionzxy.damagetweaker.mods.GregTechHandler;
 import ru.lionzxy.damagetweaker.mods.ubc.UBC;
 
 /**

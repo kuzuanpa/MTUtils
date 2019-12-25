@@ -5,11 +5,20 @@
 
 package Zeno410Utils;
 
-import net.minecraft.entity.player.EntityPlayer;
-
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+
+/*
+ * MTUtils is the software thich is made by LionZXY under GNU Affero General Public License
+ * Please see LICENSE file or https://www.gnu.org/licenses/agpl-3.0.en.html
+ *
+ * This build is modified by monatann under same LICENSE, AGPL.
+ * You do not report bugs to original author.
+ * You should report to me because your bug is caused by my code.
+ * */
+
+import net.minecraft.entity.player.EntityPlayer;
 
 /**
  *
@@ -46,7 +55,7 @@ public class PlayerID {
 
     @Override
     public int hashCode() {return name.hashCode();}
-    
+
     @Override
     public boolean equals(Object compared) {
         if (compared == null) return false;
@@ -55,6 +64,6 @@ public class PlayerID {
         }
         return false;
     }
-    
+
 
 }
