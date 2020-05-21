@@ -1,5 +1,5 @@
 # MTUtils Unofficial
-Just add codes for my modpack.
+Codes are added for GT modpack development.
 Original MTUtils can be found here
 https://www.curseforge.com/minecraft/mc-mods/mtutils
 https://github.com/LionZXY/MTUtils
