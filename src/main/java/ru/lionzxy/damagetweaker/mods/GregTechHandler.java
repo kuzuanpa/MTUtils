@@ -102,10 +102,10 @@ public class GregTechHandler {
 							public void run() {
 								recipes.addRecipe(newRecipe, true, fakeRecipe, hidden);
 
-								String message = "[MTUtilsGT] Recipe with replaced " + fluidText + " for variable "
-										+ key + " add!";
-								System.out.println(message);
-								MineTweakerAPI.logInfo(message);
+								//String message = "[MTUtilsGT] Recipe with replaced " + fluidText + " for variable "
+								//		+ key + " add!";
+								//System.out.println(message);
+								//MineTweakerAPI.logInfo(message);
 							}
 						});
 
@@ -162,8 +162,8 @@ public class GregTechHandler {
 				public void run() {
 					recipeMap.addRecipe(recipe, false, false, false);
 
-					System.out.println("[MTUtilsGT] Recipe for variable " + fieldName + " add!");
-					MineTweakerAPI.logInfo("[MTUtilsGT] Recipe for variable " + fieldName + " add!");
+					//System.out.println("[MTUtilsGT] Recipe for variable " + fieldName + " add!");
+					//MineTweakerAPI.logInfo("[MTUtilsGT] Recipe for variable " + fieldName + " add!");
 				}
 			};
 
